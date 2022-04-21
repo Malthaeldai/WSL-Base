@@ -25,9 +25,9 @@ cp zshrc ~/.zshrc;
 sudo usermod --shell /usr/bin/zsh $USER
 echo "SSH-Keys connection"
 read -p 'Windows-Username: ' uservar
-ln -s /mnt/c/Users/$uservar/.ssh ~/.ssh
-chmod 700 ~/.ssh
-chmod 600 ~/.ssh/*
+mkdir -p ~/.ssh
+sudo bindfs -u $USER -g $USER -p 0600:ug+D /mnt/c/Users/matth/.ssh/ .ssh/
+
 echo "--------------------------------------------------";
 echo "Pls. re-log to Distro";
 echo "--------------------------------------------------";
