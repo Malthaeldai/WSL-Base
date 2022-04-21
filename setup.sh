@@ -1,10 +1,12 @@
+sudo apt update;
+sudo apt upgrade -y;
+sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip -y;
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update;
-sudo apt upgrade -y;
-sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip terraform packer powershell -y;
+sudo apt install terraform packer powershell -y;
 sudo python3 -m pip install ansible;
 sudo pip3 install pywinrm;
 ansible-galaxy install -r ansible_install_collections.yml;
