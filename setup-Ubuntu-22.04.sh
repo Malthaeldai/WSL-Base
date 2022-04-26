@@ -1,6 +1,6 @@
 sudo apt update;
 sudo apt upgrade -y;
-sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip bindfs -y;
+sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip bindfs sshpass -y;
 
 curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg
 sudo install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/

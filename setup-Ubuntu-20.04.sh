@@ -1,6 +1,6 @@
 sudo apt update;
 sudo apt upgrade -y;
-sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip bindfs -y;
+sudo apt install gcc make mc curl wget git gnupg2 apt-transport-https ca-certificates curl zsh python3-pip bindfs sshpass -y;
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
