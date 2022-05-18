@@ -32,7 +32,7 @@ sudo usermod --shell /usr/bin/zsh $USER
 echo "SSH-Keys connection"
 read -p 'Windows-Username: ' uservar
 mkdir -p ~/.ssh
-echo "sudo bindfs -u $USER -g $USER -p 0600:ug+D /mnt/c/Users/$uservar/.ssh/ .ssh/" >> ~/.zshrc
+echo "sudo bindfs -u $USER -g $USER -p 0600:ug+D /mnt/c/Users/$uservar/.ssh/ .ssh/"
 echo "--------------------------------------------------";
 echo "Pls. re-log to Distro";
 echo "--------------------------------------------------";
