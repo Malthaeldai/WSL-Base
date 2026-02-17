@@ -15,7 +15,7 @@ sudo pip3 install pywinrm;
 ansible-galaxy install -r ansible_install_collections.yml;
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p .config;
-cp .config/starship.toml ~/.config;
+cp .config/starship.toml ~/.config/starship.toml;
 cp zsh.tgz ~;
 cd ~;
 tar -xf zsh.tgz
