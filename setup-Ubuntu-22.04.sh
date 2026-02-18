@@ -15,7 +15,7 @@ sudo pip3 install pywinrm;
 ansible-galaxy install -r ansible_install_collections.yml;
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p .config;
-cp .config/starship.toml ~/.config;
+cp .config/starship.toml ~/.config/starship.toml;
 cp zsh.tgz ~;
 cd ~;
 tar -xf zsh.tgz
@@ -26,7 +26,7 @@ sudo usermod --shell /usr/bin/zsh $USER
 echo "SSH-Keys connection"
 read -p 'Windows-Username: ' uservar
 mkdir -p ~/.ssh
-echo "sudo bindfs -u $USER -g $USER -p 0600:ug+D /mnt/c/Users/$uservar/.ssh/ .ssh/" | tee -a .zshrc
+echo "sudo bindfs -u $USER -g $USER -p 0600:ug+D /mnt/c/Users/$uservar/.ssh/ .ssh/" >> ~/.zshrc
 echo "--------------------------------------------------";
 echo "Pls. re-log to Distro";
 echo "--------------------------------------------------";
